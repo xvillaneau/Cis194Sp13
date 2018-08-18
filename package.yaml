@@ -1,0 +1,57 @@
+name:                Cis194Sp13
+version:             0.1.0.0
+license:             LGPL-3
+author:              "Xavier Villaneau"
+maintainer:          "xvillaneau@gmail.com"
+copyright:           "2018 Xavier Villaneau"
+
+# extra-source-files:
+# - README.md
+# - ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+# description:         Please see the README on GitHub at <https://github.com/githubuser/Cis194Sp13#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- containers == 0.5.7.1
+- mtl == 2.2.1
+
+library:
+  source-dirs:
+  - Hw1
+  - Hw2
+  - Hw3
+  - Hw4
+  - Hw5
+  - Hw6
+  - Hw7
+
+executables:
+  Editor-exe:
+    main:                StringBufEditor.hs
+    source-dirs:         Hw7
+    ghc-options:
+      - -main-is StringBufEditor
+    # - -threaded
+    # - -rtsopts
+    # - -with-rtsopts=-N
+    dependencies:
+    - Cis194Sp13
+
+# tests:
+#   Cis194Sp13-test:
+#     main:                Spec.hs
+#     source-dirs:         test
+#     ghc-options:
+#     - -threaded
+#     - -rtsopts
+#     - -with-rtsopts=-N
+#     dependencies:
+#     - Cis194Sp13

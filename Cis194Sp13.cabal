@@ -1,0 +1,65 @@
+-- This file has been generated from package.yaml by hpack version 0.18.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           Cis194Sp13
+version:        0.1.0.0
+author:         Xavier Villaneau
+maintainer:     xvillaneau@gmail.com
+copyright:      2018 Xavier Villaneau
+license:        LGPL-3
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  hs-source-dirs:
+      Hw1
+      Hw2
+      Hw3
+      Hw4
+      Hw5
+      Hw6
+      Hw7
+  build-depends:
+      base >= 4.7 && < 5
+    , containers == 0.5.7.1
+    , mtl == 2.2.1
+  exposed-modules:
+      Credit
+      Hanoi
+      Log
+      LogAnalysis
+      Golf
+      HighOrder
+      Calc
+      ExprT
+      Parser
+      StackVM
+      Fibonacci
+      Buffer
+      Editor
+      JoinList
+      Sized
+      StringBufEditor
+      StringBuffer
+  other-modules:
+      Paths_Cis194Sp13
+  default-language: Haskell2010
+
+executable Editor-exe
+  main-is: StringBufEditor.hs
+  hs-source-dirs:
+      Hw7
+  ghc-options: -main-is StringBufEditor
+  build-depends:
+      base >= 4.7 && < 5
+    , containers == 0.5.7.1
+    , mtl == 2.2.1
+    , Cis194Sp13
+  other-modules:
+      Buffer
+      Editor
+      JoinList
+      Sized
+      StringBuffer
+  default-language: Haskell2010
